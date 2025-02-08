@@ -21,8 +21,9 @@
             </ul>
         </nav>
     </header>
-    
+    <div class="content">
 <!---Login Form--->
+
     <section id="login" class="form-container">
         <form action="login.php" method="post">
             <label for="email">Email</label>
@@ -32,7 +33,7 @@
             <button type="submit">Login</button>
         </form>
     </section>
-
+    </div>
     <footer>
     ©<span id="myYear"><?php echo date('Y'); ?></span> Aachal Shrestha | All Rights Reserved
     </footer>
