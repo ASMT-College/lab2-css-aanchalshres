@@ -34,8 +34,7 @@
     </section>
 
     <footer>
-        Copyright@ Aachal Shrestha 
-        <span id="myYear"><?php echo date('Y'); ?></span>
+    ©<span id="myYear"><?php echo date('Y'); ?></span> Aachal Shrestha | All Rights Reserved
     </footer>
 </body>
 </html>
