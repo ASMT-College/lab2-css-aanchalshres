@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Facebook</h1>
+        <img src="img/facebook-6786210_1280.webp" alt="Facebook Logo">
         <nav class="navbar">
             <ul class="nav-left">
                 <li><a href="#home">Home</a></li>
