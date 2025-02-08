@@ -17,6 +17,7 @@ body {
 
 .content {
     flex: 1; /* Pushes the footer down */
+    width:100%;
 }
 
 footer {
@@ -27,3 +28,49 @@ footer {
     width: 100%;
 }
 
+.content-left{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    width: 50%;
+    float: left;
+}
+
+.content-right{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    width: 50%;
+    float: right;
+}
+
+label, input{
+    display:block;
+}
+
+nav {
+    background: #1877F2;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-left {
+    margin-right: auto; /* Aligns to the left */
+}
+
+.nav-right {
+    margin-left: auto; /* Aligns to the right */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
