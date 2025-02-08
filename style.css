@@ -23,8 +23,6 @@ body {
 }
 
 footer {
-    background: #333;
-    color: white;
     text-align: center;
     padding: 10px;
     width: 100%;
@@ -36,13 +34,19 @@ footer {
     float: left;
 }
 
+#logo{
+    margin:0 auto;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
 .content-right{
     font-family: "Helvetica Neue", Arial, sans-serif;
     width: 50%;
     float: right;
 }
 
-label, input{
+input{
     display:block;
 }
 
@@ -89,17 +93,45 @@ header {
 .form-container{
     width:50%;
     background-color: white;
-    margin: 0 auto;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 .form-container form{
     padding: 20px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-a{
-    text-decoration: none;
-    color: #1877F2;
+.create{
+    background-color: rgb(9, 151, 9);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 75%;
+    font-size: 16px;
+    text-align: center;
 }
+
+#login a{ 
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+
 
 input[type="submit"]{
     background-color: #1877F2;
@@ -107,4 +139,35 @@ input[type="submit"]{
     padding: 10px 15px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 16px;
 }
+
+input[type="submit"]:hover{
+    background-color: #3887d6;
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input:hover{
+    border: 1px solid #1877F2;
+}
+
+input:focus{
+    border: 1px solid #1877F2;
+}
+
+.form-container h2{
+    padding: 20px;
+    text-align: center;
+    color: #1877f2;
+  }
+

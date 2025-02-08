@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navigation Bar -->
     <header>
         <nav class="navbar">
             <ul class="nav-left">
@@ -17,37 +15,31 @@
                 <li><a href="#about">About</a></li>
             </ul>
             <ul class="nav-right">
-                <li><a href="#signup">Sign Up</a></li>
-                <li><a href="#login">Login</a></li>
+                <li><a href="signup.php">Sign Up</a></li>
+                <li><a href="index.php">Login</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Content Section -->
-    <div class="content" id="home">
-        <h1 class="blue-title">Facebook</h1>
-        <p>Explore our website to learn more about us.</p>
-    </div>
-
    
-
-   <!-- Sign Up Section -->
-   <section id="signup" class="form-container">
+    <div class="content">
+    <section id="signup" class="form-container">
         <h2>Create a New Account</h2>
         <form action="signup_process.php" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <input type="submit" value="Sign Up">
+            <input type="text" placeholder="Full Name" required>
+            <input type="date" placeholder="Date of Birth" required>
+            <select required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Sign Up"><br>
+            
+            <a href="index.php" style="text-align: center;">Already have an account?</a>
         </form>
     </section>
-    
+    </div>
 
     <!-- Footer -->
     <footer>
