@@ -9,6 +9,8 @@ img{
 }
 
 body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f2f5;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -44,33 +46,65 @@ label, input{
     display:block;
 }
 
-nav {
+header {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: #1877F2;
     padding: 10px;
 }
 
-nav ul {
+.nav-left,
+.nav-right {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
 .nav-left {
-    width: 75%
+    margin-right: auto; 
 }
 
 .nav-right {
-    width: 25%
+    margin-left: auto; 
 }
-
-nav ul li {
+.nav-left li,
+.nav-right li {
     margin: 0 15px;
 }
 
-nav ul li a {
+.nav-left li a,
+.nav-right li a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
     display: block;
+}
+
+.form-container{
+    width:50%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.form-container form{
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #1877F2;
+}
+
+input[type="submit"]{
+    background-color: #1877F2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
 }

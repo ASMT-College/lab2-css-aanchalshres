@@ -23,22 +23,29 @@
 
 <div class="content">
 <div class="content-left">
-<a href="index.php"><img src="img/facebook-6786210_1280.webp" alt="Facebook Logo"></a>
-<h1>Connect with friends and the world around you on Facebook.</h1>
+    <div>
+    <a href="index.php"><img src="img/facebook-6786210_1280.webp" alt="Facebook Logo"></a>
+    <h1>Connect with friends and the<br>
+        world around you on Facebook.</h1>
+    </div>    
 </div>  
 <!---Login Form--->
-<div class="content-right"></div>
+<div class="content-right">
 <section id="login" class="form-container">
         <form action="login.php" method="post">
             <label for="email">Email</label>
             <input type="email" name="email" id="email" required>
             <label for="password">Password</label>
             <input type="password" name="password" id="password" required>
-            <button type="submit">Login</button>
+            <button type="submit">Log In</button><br>
+            <a href="forgot-password.php">Forgot Password?</a>
+            <hr>
+            <a href="signup.php">Create New Account</a>
         </form>
     </section>
+</div>
     </div>
-    </div>
+    
     <footer>
     ©<span id="myYear"><?php echo date('Y'); ?></span> Aachal Shrestha | All Rights Reserved
     </footer>
