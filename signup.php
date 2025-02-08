@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Facebook</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- Navigation Bar -->
     <header>
         <nav class="navbar">
@@ -30,31 +31,27 @@
 
    
 
-    <!-- Sign Up Section -->
-    <section id="signup" class="form-container">
+   <!-- Sign Up Section -->
+   <section id="signup" class="form-container">
         <h2>Create a New Account</h2>
-        <form>
-            <label for="fullname">Full Name</label> 
-            <input type="text" placeholder="Full Name" required>
-            <label for="dob">Date of Birth</label>
-            <input type="date" placeholder="Date of Birth" required>
-            <select required>
-                <option value="" disabled selected>Select Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select>
-            <label for="email">Email</label>
-            <input type="email" placeholder="Email" required>
-            <label for="password">Password</label>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Sign Up</button>
+        <form action="signup_process.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="Sign Up">
         </form>
     </section>
-    </section>
-    <footer>Copyright@ Aachal Shrestha <span id="myYear"> <?php echo date('Y');?></span>  
-    <script>
-            document.getElementById('myYear').innerText = new Date().getFullYear();
-        </script>
-        </footer>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <?php echo date('Y'); ?> Facebook</p>
+    </footer>
 </body>
 </html>

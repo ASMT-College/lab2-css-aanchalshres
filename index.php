@@ -21,6 +21,8 @@
             </ul>
         </nav>
     </header>
+    
+<!---Login Form--->
     <section id="login" class="form-container">
         <form action="login.php" method="post">
             <label for="email">Email</label>
@@ -28,12 +30,12 @@
             <label for="password">Password</label>
             <input type="password" name="password" id="password" required>
             <button type="submit">Login</button>
+        </form>
     </section>
-    <footer>Copyright@ Aachal Shrestha <span id="myYear"> <?php echo date('Y');?></span>  
-    <script>
-            document.getElementById('myYear').innerText = new Date().getFullYear();
-        </script>
-        </footer>
 
+    <footer>
+        Copyright@ Aachal Shrestha 
+        <span id="myYear"><?php echo date('Y'); ?></span>
+    </footer>
 </body>
 </html>
