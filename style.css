@@ -170,16 +170,3 @@ input:focus{
     text-align: center;
     color: #1877f2;
   }
-
-
-@media (max-width: 400px){
-    .form-container{
-        background-color: red;
-    }
-    .content-left{
-        width: 100%;
-    }
-    .content-right{
-        width: 100%;
-    }
-}
